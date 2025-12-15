@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>돌마고 - 홈</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="home-header">
+            <img src="dolma.png" alt="돌마고 마스코트" class="mascot">
+            <h1>무엇을 도와줄까?</h1>
+        </header>
+
+        <nav class="home-navigation">
+            <a href="clubs.html" class="nav-button nav-button-green">동아리 선택하러 가기</a>
+            <a href="activities.html" class="nav-button nav-button-red">활동 추천받으러 가기</a>
+        </nav>
+
+        <main class="selection-slots">
+            <div class="slot" id="club-slot">
+                <h3>내 동아리</h3>
+                <p class="placeholder">선택하신 동아리가 없습니다</p>
+            </div>
+            <div class="slot" id="activity-slot">
+                <h3>내 활동</h3>
+                <p class="placeholder">선택하신 활동이 없습니다</p>
+            </div>
+        </main>
+
+        <footer class="home-footer">
+            <button class="btn-reset">초기화 하기</button>
+        </footer>
+    </div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

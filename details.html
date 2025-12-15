@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>돌마고 - 상세 정보</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styles for details page */
+        .details-card {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: left;
+            box-shadow: var(--shadow);
+        }
+        .details-card h1 {
+            color: var(--primary-color);
+        }
+        .details-card .short-desc {
+            font-size: 1.1rem;
+            color: #525f7f;
+            margin-bottom: 20px;
+        }
+        .details-card .competencies {
+            margin-bottom: 20px;
+        }
+        .details-card hr {
+            border: 0;
+            height: 1px;
+            background-color: #e9ecef;
+            margin: 20px 0;
+        }
+        .qna-item {
+            margin-bottom: 20px;
+        }
+        .qna-item h4 {
+            margin: 0 0 5px 0;
+            color: var(--primary-color);
+        }
+        .qna-item p {
+            margin: 0;
+            padding-left: 1.2em;
+        }
+        .btn-select {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: white;
+            background-color: var(--primary-color);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: background-color 0.3s;
+        }
+        .btn-select:hover {
+            background-color: #324cdd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="page-header">
+            <a href="home.html" class="icon-button">🏠</a>
+            <h1>상세 정보</h1>
+            <a href="javascript:history.back()" class="icon-button">⬅️</a>
+        </header>
+
+        <main id="details-container">
+            <!-- Details will be dynamically inserted here by script.js -->
+        </main>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
